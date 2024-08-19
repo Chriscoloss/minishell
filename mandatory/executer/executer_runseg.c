@@ -28,24 +28,6 @@ void	cleanup_fds(t_fd *fd)
 		close(fd->last_output);
 }
 
-void	print_token_pointers3(t_list *tok_lst)
-{
-	t_list	*current;
-	t_token	*c;
-
-	ft_printf("\n"Y"AFTER RUN: Token Pointers:"D"\n");
-	current = tok_lst;
-	while (current != NULL)
-	{
-		c = (t_token *)current->content;
-		ft_printf("Token address: %p\n", c);
-		ft_printf("Token->str: %p (%s)\n", c->str, c->str);
-		ft_printf("Token->expmap: %p (%s)\n", c->expmap, c->expmap);
-		current = current->next;
-	}
-	ft_printf(Y"End of token pointers\n"D);
-}
-
 void	run_seg(t_minishell *m, int i, int input_fd, int output_fd)
 {
 	t_fd	fd;

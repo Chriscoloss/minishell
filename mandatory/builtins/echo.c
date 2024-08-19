@@ -18,7 +18,7 @@ void	ft_echo(char **args)
 	bool	newline;
 	int		start_index;
 
-	if (strcmp(args[0], "echo") == 0)
+	if (ft_strcmp(args[0], "echo") == 0)
 		start_index = handle_options(args, &newline, 1);
 	else
 		start_index = handle_options(args, &newline, 0);

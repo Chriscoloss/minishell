@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   executer_runseg_helper.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jonathaneberle <jonathaneberle@student.    +#+  +:+       +#+        */
+/*   By: jeberle <jeberle@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/14 14:31:50 by chorst            #+#    #+#             */
-/*   Updated: 2024/08/19 00:48:14 by jonathanebe      ###   ########.fr       */
+/*   Updated: 2024/08/19 10:47:15 by jeberle          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

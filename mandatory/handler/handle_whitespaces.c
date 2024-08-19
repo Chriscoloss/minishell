@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   handle_whitespaces.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chorst <chorst@student.42.fr>              +#+  +:+       +#+        */
+/*   By: jonathaneberle <jonathaneberle@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 13:51:09 by jeberle           #+#    #+#             */
-/*   Updated: 2024/08/13 08:55:05 by chorst           ###   ########.fr       */
+/*   Updated: 2024/08/19 10:55:15 by jonathanebe      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*handle_whitespaces(const char *str)
 	char	*new_str;
 	int		new_str_len;
 
-	new_str_len = strlen(str) + 1;
+	new_str_len = ft_strlen(str) + 1;
 	new_str = malloc(new_str_len);
 	if (new_str == NULL)
 	{

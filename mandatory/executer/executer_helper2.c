@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   executer_helper2.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jonathaneberle <jonathaneberle@student.    +#+  +:+       +#+        */
+/*   By: jeberle <jeberle@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 09:16:46 by chorst            #+#    #+#             */
-/*   Updated: 2024/08/19 07:14:32 by jonathanebe      ###   ########.fr       */
+/*   Updated: 2024/08/19 10:47:12 by jeberle          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ char	*get_executable(t_minishell *m, char *command)
 	int		pathcount;
 	char	*result;
 
+	if (ft_strcmp("", command) == 0)
+		return (NULL);
 	if (ft_strchr(command, '/') && access(command, F_OK) == 0)
 		return (ft_strdup(command));
 	pathline = my_getenv("PATH", m->env_list);

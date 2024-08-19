@@ -88,7 +88,7 @@ void	prompt_to_token(t_minishell *m)
 		if (!token)
 		{
 			cleanup_tokenizer_state(&state);
-			ft_error_exit("Fehler beim Erstellen des Tokens");
+			ft_error_exit("Error while create token\n");
 		}
 		update_tok_type(token, WORD);
 		add_token_to_list(&(m->tok_lst), token);

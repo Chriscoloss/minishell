@@ -18,7 +18,7 @@ void	increment_shlvl(char **value)
 	int		carry;
 	char	*new_value;
 
-	i = strlen(*value) - 1;
+	i = ft_strlen(*value) - 1;
 	carry = 1;
 	while (i >= 0 && carry)
 	{
@@ -35,7 +35,7 @@ void	increment_shlvl(char **value)
 	{
 		new_value = malloc(strlen(*value) + 2);
 		new_value[0] = '1';
-		strcpy(new_value + 1, *value);
+		ft_strcpy(new_value + 1, *value);
 		free(*value);
 		*value = new_value;
 	}
